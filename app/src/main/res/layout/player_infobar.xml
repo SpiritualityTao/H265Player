@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1220dp"
+    android:layout_height="120dp"
+    android:layout_marginTop="600dp"
+    android:id="@+id/bg_inforbar_progress"
+    android:background="@drawable/bg_rect_deep_black_cor">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/vod_play_state"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:id="@+id/vod_play_duration"
+            android:layout_toRightOf="@id/vod_play_state"
+            style="@style/TextViewComman"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"/>
+
+        <ProgressBar
+            android:id="@+id/vod_play_progressbar"
+            android:layout_toRightOf="@id/vod_play_duration"
+            style="@style/ProgressBar_white"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center"
+            android:layout_width="850dp"
+            android:layout_height="4dp"
+            android:indeterminateOnly="false" />
+
+        <TextView
+            android:id="@+id/vod_play_state_mark"
+            android:layout_toRightOf="@id/vod_play_progressbar"
+            style="@style/TextViewComman"
+            android:gravity="right"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#4C4C4C"/>
+
+    <FrameLayout
+        android:layout_marginTop="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/vod_type"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:id="@+id/vod_play_name"
+            style="@style/TextViewComman"
+            android:layout_width="800dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="82dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/vod_current_time"
+            style="@style/TextViewComman"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="970dp" />
+    </FrameLayout>
+
+</FrameLayout>
